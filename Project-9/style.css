@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262626;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .6)
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav {
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.nav-items li a {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.nav-items li a:hover {
+    color: rgb(70, 70, 255);
+}
+
+.nav-button {
+    width: fit-content;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 62.5%;
+}
+
+.nav-button {
+    display: none;
+}
+
+.bar,
+.bar1,
+.bar2 {
+    font-size: 62.5%;
+    margin: 0.6em;
+    width: 4rem;
+    height: .5rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    transition: all .5s;
+}
+
+.change .bar {
+    transform: translate(0, .7rem) rotate(-45deg);
+}
+
+.change .bar1 {
+    width: 0;
+    opacity: 0;
+}
+
+.change .bar2 {
+    transform: translate(0, -.7rem) rotate(45deg);
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.content h1 {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.content p {
+    max-width: 60%;
+    margin-bottom: 5rem;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.btn {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-button {
+        position: fixed;
+        padding: 2rem;
+        top: 10px;
+        right: 12px;
+        display: block;
+    }
+
+    .nav-items {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 7rem;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2em;
+        background-color: #000;
+        transition: all .5s;
+        transform: translateX(100%);
+    }
+
+    .hide-nav-items {
+        transform: none;
+    }
+}

@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.close-modal {
+
+    margin: 0 0 10px 95%;
+    display: inline-block;
+    background-color: red;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.box-modal {
+    margin: auto;
+    padding: 1rem;
+    width: 600px;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: darkcyan;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: justify;
+    display: none;
+}
+
+.modal-text {
+    max-height: 400px;
+    overflow: hidden;
+}

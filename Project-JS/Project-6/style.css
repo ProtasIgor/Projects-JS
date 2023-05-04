@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    border-radius: 10px;
+}
+body {
+    background-color: aquamarine;
+}
+.box {
+    margin: 300px auto 0;
+    width: 400px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "input input input input"
+        "input1 input1 input1 input1"
+        "btn btn btn btn"
+        "result result result result";
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.input1 {
+    grid-area: input;
+}
+
+.input2 {
+    grid-area: input1;
+}
+
+.result {
+    grid-area: result;
+}
